@@ -16,7 +16,7 @@
    It sets things up so the site knows where and how it should be deployed.
 
 5. **How does this automated deployment improve reliability compared to manual deployment?**  
-   It’s more reliable because it takes out human error, always runs the tests, and does things the same way every time I push code.
+   It reduces human error, ensures tests/validations are run automatically, and makes deployment consistent every time code is pushed. This also saves developers time since they don’t need to manually check and deploy everything.
 
 6. **What would happen if you pushed code to a different branch (not main)?**  
    Nothing would happen until that branch gets merged into `main`, since the workflow only watches `main`.
