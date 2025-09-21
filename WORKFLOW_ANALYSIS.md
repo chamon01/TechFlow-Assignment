@@ -1,22 +1,22 @@
 # Workflow Analysis
 
 1. **What triggers this workflow to run?**  
-   It runs anytime I push new code to the `main` branch.
+   The workflow is triggered by a push or pull request to the **main** branch as shown in the `on:` section of the deploy.yml file.
 
 2. **What are the four main steps this workflow performs?**  
-   - **Checkout code** – grabs the files from the repo.  
-   - **Validate HTML** – checks the HTML for mistakes.  
-   - **Check links** – makes sure links aren’t broken.  
-   - **Deploy** – puts the site live on GitHub Pages.  
+   - Checkout code  
+   - Setup Node.js environment  
+   - Build and validate the project (HTML validation, check for broken links)  
+   - Deploy to GitHub Pages  
 
 3. **What does the "Checkout code" step do and why is it necessary?**  
-   This step pulls in my project files so the other steps can test and deploy them. Without it, the workflow wouldn’t have any files to work with.
+   It pulls the repository code into the runner so the workflow has access to the files. Without this step, no code would be available to build or deploy.
 
 4. **What is the purpose of the environment configuration?**  
-   It sets things up so the site knows where and how it should be deployed.
+   The environment configuration sets the runtime (like Node.js version) and permissions needed to deploy. This ensures consistency no matter who runs the workflow and prevents failures caused by mismatched environments.
 
 5. **How does this automated deployment improve reliability compared to manual deployment?**  
-   It’s more reliable because it takes out human error, always runs the tests, and does things the same way every time I push code.
+   It reduces human error by running the same steps every time. It also validates the code before deployment and only pushes updates when everything passes.
 
 6. **What would happen if you pushed code to a different branch (not main)?**  
-   Nothing would happen until that branch gets merged into `main`, since the workflow only watches `main`.
+   The workflow would not run, so the website would not deploy. Only changes to the main branch trigger the deployment.
