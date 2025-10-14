@@ -16,7 +16,6 @@
    The environment configuration sets the runtime (like Node.js version) and permissions needed to deploy. This ensures consistency no matter who runs the workflow and prevents failures caused by mismatched environments.
 
 5. **How does this automated deployment improve reliability compared to manual deployment?**  
-   It reduces human error by running the same steps every time. It also validates the code before deployment and only pushes updates when everything passes.
 
 6. **What would happen if you pushed code to a different branch (not main)?**  
    The workflow would not run, so the website would not deploy. Only changes to the main branch trigger the deployment.
