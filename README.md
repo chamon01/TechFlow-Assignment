@@ -68,7 +68,7 @@ This project follows a professional Git workflow:
 
 The website is automatically deployed to GitHub Pages using GitHub Actions when changes are pushed to the `main` branch.
 
-**Live Site**: [Your GitHub Pages URL will appear here]
+**Live Site**: https://chamon01.github.io/TechFlow-Assignment/
 
 ## Development Workflow
 
@@ -89,4 +89,3 @@ This project is for educational purposes.
 ---
 
 *Built with ❤️ by the TechFlow Solutions team*
-### Update: About and Team sections added successfully to the site.
