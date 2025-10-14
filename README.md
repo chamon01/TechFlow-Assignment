@@ -89,3 +89,4 @@ This project is for educational purposes.
 ---
 
 *Built with ❤️ by the TechFlow Solutions team*
+### Update: About and Team sections added successfully to the site.
